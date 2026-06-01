@@ -2,7 +2,7 @@ import os
 import sys
 import boto3
 from botocore.exceptions import NoCredentialsError
-
+# ajouter des commentaires
 # --- CONFIGURATION DU SYSTÈME DE SAUVEGARDE ---
 AWS_ACCESS_KEY = ""  
 BUCKET_NAME = "grc99"
@@ -34,7 +34,7 @@ def verifier_connexion_s3():
         return False
 
 if __name__ == "__main__":
-    print("=== Outil de Sauvegarde Automatique - v1.4.3 ===")
+    print("=== Outil de Sauvegarde Automatique - v1.4.4 ===")
     if verifier_connexion_s3():
         print("[*] Prêt pour l'archivage des données de l'équipe...")
         # La suite du script de sauvegarde (simulation)
